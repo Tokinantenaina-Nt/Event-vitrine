@@ -1,0 +1,159 @@
+:root {
+  --color-1: #d35649;
+  --color-2: #98a5a5;
+  --color-3: #509bd7;
+  --color-4: #1f1f1f;
+  --color-5: #444;
+  --color-6: #575a89;
+  --color-7: #eee;
+}
+
+/* NAVBAR  */
+#logo span {
+  color: #ffffff;
+  text-shadow: 2px 2px 0px #474747;
+  font-size: large;
+}
+.navbar {
+  background-color: #d35649;
+  color: #fff;
+  padding: 1% auto;
+}
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5%;
+}
+.navMenu {
+  width: 30%;
+  font-size: xx-small;
+}
+
+/* FOOTER  */
+.mapsnavbar {
+  color: #eee;
+  filter: invert(1);
+  border: 1px solid #1f1f1f;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+.footerMenu {
+  border-top: solid #eee 1px;
+  border-bottom: solid #eee 1px;
+  padding: 2% 0;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.abbonnement {
+  background-color: #1f1f1f;
+  height: auto;
+  color: #eee;
+}
+.copyright {
+  background-color: #444;
+  color: #939f9f;
+  padding: 1% 0;
+}
+.subscribe {
+  text-align: center;
+}
+.subscribe input {
+  background-color: #1f1f1f;
+  border: solid #99a5a5 0.1px;
+  height: 2.2rem;
+}
+
+/* **************************INDEX PAGE ********************* */
+
+/* MAIN  */
+p,
+a,
+span {
+  font-size: medium;
+}
+h6 {
+  padding: 1em 0;
+}
+input {
+  border-radius: 3px;
+}
+/* Research */
+.eventSearch {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 4% 0% 10% 0%;
+}
+
+.eventSearch span {
+  text-shadow: 2px 2px 0px #474747;
+  font-size: x-large;
+}
+
+.eventSearch form {
+  margin: 1% 25%;
+  border-radius: 5px;
+  background-color: rgba(238, 238, 238, 70%);
+  padding: 2% 1%;
+}
+
+.eventSearch input {
+  width: 80%;
+}
+
+/* 4 steps */
+.simpleSteps {
+  padding: 4% 0%;
+}
+/* .steps {
+  font-size: xx-small;
+} */
+
+/* NEAR YOU */
+.nearYou img,
+.connectingYou img,
+.spendingLove img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.nearYou button,
+.connectingYou button {
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 1.5% 2%;
+  text-decoration: none;
+  mix-blend-mode: screen;
+}
+
+.nearYou {
+  color: #fff;
+  background-color: #d1574d;
+  padding: 4% 0%;
+}
+
+.connectingYou {
+  color: #fff;
+  background-color: #99a5a5;
+  padding: 4% 0%;
+}
+.spendingLove {
+  color: #fff;
+  background-color: #549cd5;
+  padding: 4% 0%;
+}
+
+/* **********************SEARCH PAGE******************* */
+
+.filter {
+  text-align: center;
+  display: inline;
+}
