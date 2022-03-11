@@ -9,6 +9,10 @@
 }
 
 /* NAVBAR  */
+#logo {
+  width: 20%;
+  padding: 0;
+}
 #logo span {
   color: #ffffff;
   text-shadow: 2px 2px 0px #474747;
@@ -46,7 +50,9 @@
   justify-items: center;
   justify-content: space-between;
 }
-
+.footerMenu span {
+  font-size: small;
+}
 .abbonnement {
   background-color: #1f1f1f;
   height: auto;
@@ -64,6 +70,12 @@
   background-color: #1f1f1f;
   border: solid #99a5a5 0.1px;
   height: 2.2rem;
+}
+.subscribe input::placeholder {
+  color: #939f9f;
+}
+.subscribe a {
+  text-decoration: none;
 }
 
 /* **************************INDEX PAGE ********************* */
@@ -155,5 +167,34 @@ input {
 
 .filter {
   text-align: center;
-  display: inline;
+  margin-top: 2%;
+  padding: 2%;
+}
+.filter input {
+  width: 100%;
+}
+.fill {
+  text-align: left;
+}
+
+/* ************************* ABOUT PAGE ************************ */
+.sunnyBeach {
+  margin-top: 4%;
+  margin-left: 2%;
+  margin-bottom: 0;
+  box-shadow: 1px 0px 6px 10px rgba(0, 0, 0, 0.29);
+}
+.sunnyBeach span {
+  text-decoration: solid;
+}
+.date {
+  text-align: center;
+  margin: 4%;
+  box-shadow: 1px 0px 6px 10px rgba(0, 0, 0, 0.29);
+  padding: 2%;
+}
+.moreDetail {
+  margin: 4% 0 0 2%;
+  background-color: #eee;
+  padding: 2% 1%;
 }
