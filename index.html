@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Evaluation Finale HTML et CSS : [Events]</title>
-    <link rel="stylesheet" href="./Assets/CSS/Style.css">
+    <link rel="stylesheet" href="/Assets/CSS/Style.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"> -->
-    <link rel="stylesheet" href="./Assets/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/Assets/Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
@@ -30,20 +30,20 @@
         </nav> 
     </header>
     <main>
-        <!-- RECHEARCH EVENT -->
-        <div class="eventSearch" style="background: url(./Assets/Images/group-1.jpg) 50% 50% no-repeat ;background-size: 100%; height: 70%; width: 100%">
+        <!-- RESEARCH EVENT -->
+        <div class="eventSearch">
             <span>[Events]... your gateway to connect with events around your area</span>
           <form action="get">
              <p style="color: #1f1f1f; font-size:large; padding: 1em 0 0 0"> SEARCH EVENTS NEARBY</p><br>
              <input type="text" placeholder=" Insert your location here "></input>
-             <button class="btn btn-primary" style="background-color: rgba(211,86,73,90%); border: 0; margin-left: -1%; margin-top: -0.3rem; height: 1.8em; padding-top: 0.3em;"> <p><b>SEARCH</b></p></button></span>
+             <button class="btn btn-primary searh" style="background-color: rgba(211,86,73,90%); border: 0; margin-left: -1%; margin-top: -0.3rem; height: 1.8em; padding-top: 0.3em;"> <p><b>SEARCH</b></p></button></span>
             
           </form>
           <button class="btn btn-primary" style="background-color:rgba(255,255,255, 80%); border: 0; height: 1.9em; color: black;" > <p><b> How It Works</b></p></button>
         </div>
         
         <!-- 4 SIMPLE STEPS -->
-        <section class="simpleSteps">
+        <section class="simpleSteps d-none d-md-block">
             <div class="container" style="text-align: center;">
                 <div class="row">
                     <p style="color: #d35649; font-size: large;"><b>[Events] works in four simple steps.</b>
@@ -94,13 +94,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <p><b>[Events] near you </b></p>
+                        <p class="eNyou"><b> [Events] near you </b></p>
                         <p>Every month a new you might find [Events] near you and enjoy the
                             company with people whom you can share mutual interests</p>
-                            <button>Find a [Events]</button>
+                            <a href="search.html"><button>Find a [Events]</button></a>
                     </div>
-                    <div class="col-lg-4">
-                        <img src="./Assets/Images/group-2.jpg" alt="reunionAutourD_uneTable">
+                    <div class="col-lg-4 d-none d-md-block">
+                        <img src="/Assets/Images/group-2.jpg" alt="reunionAutourD_uneTable">
                     </div>
                 </div>
             </div>
@@ -111,14 +111,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <p><b>[Events] connecting you</b></p>
+                        <p class="eNyou"><b>[Events] connecting you</b></p>
                         <p>You can create [Events] events around your area and share them
                             with people you know and with whoever wants to connect
                             </p>
-                            <button>Learn more about [Events]</button>
+                            <a href="search.html"><button>Learn more about [Events]</button></a>
                     </div>
-                    <div class="col-lg-4 no-padding">
-                        <img src="./Assets/Images/group-4.jpg" alt="homme_coucher_de_soleil">
+                    <div class="col-lg-4 d-none d-md-block">
+                        <img src="/Assets/Images/group-4.jpg" alt="homme_coucher_de_soleil">
                     </div>
                 </div>
             </div>
@@ -129,14 +129,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <p><b>[Events] spending love </b></p>
+                        <p class="eNyou" style="translate: 0 5.5em;"><b>[Events] spending love </b></p>
                         <p>[Events] let you meet new people, share interests and spreading
                             love
                             </p>
-                            <!-- <button>LEarn more about [Events]</button> -->
+                             <button class="" style="opacity: 0;"><!--None --></button> 
                     </div>
-                    <div class="col-lg-4">
-                        <img src="./Assets/Images/group-3.jpg" alt="main_lever_coeur">
+                    <div class="col-lg-4 d-none d-md-block">
+                        <img src="/Assets/Images/group-3.jpg" alt="main_lever_coeur">
                     </div>
                 </div>
             </div>
@@ -146,24 +146,24 @@
     <!-- FOOTER  -->
     <footer>
         <!-- abonnement contact About -->
-        <section class="abbonnement">
+        <section class="abbonnement d-none d-md-block">
             <div class="container">
                 <div class="row" style="padding: 6% 18%;">
                     <div class="col-lg-5 footerMenu" style="text-align: right; margin: 3% 0;">
-                        <span>HOME</span>
-                        <span>SEARCH</span>
-                        <span>ABOUT US</span>
-                        <span>ADVERTISE</span>
+                        <span> <a href="index.html"> HOME</a></span>
+                        <span> <a href="search.html"> SEARCH</a></span>
+                        <span> <a href="about.html"> ABOUT US</a></span>
+                        <span> <a href="index.html"> ADVERTISE</a></span>
                     </div>
                     <div class="col-lg-2 mapsnavbar">
                         <img src="/Assets/Icones/mapsnavbar_icon.svg" alt="map" width="100px"; style="  margin: 0px 0 0 -4%;";>
                     </div>
                    
                         <div class="col-lg-5 footerMenu" style="text-align: left;  margin: 3% 0;">
-                            <span>FACEBOOK</span>
-                            <span>TWITTER</span>
-                            <span>INSTAGRAM</span>
-                            <span>BLOG</span>
+                            <span> <a href="index.html"> FACEBOOK</a></span>
+                            <span> <a href="index.html"> TWITTER</a></span>
+                            <span> <a href="index.html"> INSTAGRAM</a></span>
+                            <span> <a href="index.html"> BLOG</a></span>
                         </div>
                     
                 </div>
@@ -172,10 +172,10 @@
                     <!-- SUBSCRIBE  -->
                     <div class="col subscribe">
                         <p><b> Subscribe</b></p>
-                        <form action="post">
+                        <form action="">
                             <input type="text" placeholder="Insert your email here">
                             <button class="btn btn-outline-secondary" style="margin: -0.5em 0em 0em -1em; height: 0.5em;   padding: 1em 2em 2em 2em;
-                            background-color: #444;" ><p style="color: #fff; padding: 0 0 0 0;"> <b> Send</b></p></button>
+                            background-color: #444;"  ><p style="color: #fff; padding: 0 0 0 0;"> <b> Send</b></p></button>
                         </form>
                     </div>
                     <!-- CONTACT  -->
@@ -189,8 +189,8 @@
                     <div class="col subscribe">
                         <p><b>About</b></p>
                         <p>
-                            [Events] is an online plateform that works to improve and increse social life conections, when this nightmare that we are curently living in is over<span>
-                        <a href="#" style="color: #d35649;">learn more.</a></span></p>
+                            [Events] is an online plateform that works to improve and increse social life conections, when this nightmare that we are curently living in is over
+                        <a href="about.html" style="color: #d35649;">learn more.</a></p>
                     </div>
                 </div>
             </div>
@@ -200,17 +200,17 @@
         <section class="copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-5">
                         <a href="facebook.com"><span><i class="fa fa-facebook"></i></span></a>
                         <a href="twitter.com"><span><i class="fa fa-twitter"></i></span></a>
                         <a href="instagram.com"><span><i class="fa fa-instagram"></i></span></a>
                         <a href="t.me"><span><i class="fa fa-telegram"></i></span></a>
                         <a href="linkedin.com"><span><i class="fa fa-linkedin"></i></span></a>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-2">
 
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-5">
                        <p> &#169; 2020 Tokinantenaina Nt, Inc. All rights reserved</p>
                     </div>
                 </div>

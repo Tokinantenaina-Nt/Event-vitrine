@@ -28,6 +28,9 @@
   color: #fff;
   padding: 5%;
 }
+.navbar a:hover {
+  color: var(--color-5);
+}
 .navMenu {
   width: 30%;
   font-size: xx-small;
@@ -50,8 +53,14 @@
   justify-items: center;
   justify-content: space-between;
 }
-.footerMenu span {
+
+.footerMenu a {
+  text-decoration: none;
+  color: #fff;
   font-size: small;
+}
+.footerMenu a:hover {
+  color: var(--color-2);
 }
 .abbonnement {
   background-color: #1f1f1f;
@@ -67,6 +76,7 @@
   text-align: center;
 }
 .subscribe input {
+  color: #fff;
   background-color: #1f1f1f;
   border: solid #99a5a5 0.1px;
   height: 2.2rem;
@@ -76,6 +86,9 @@
 }
 .subscribe a {
   text-decoration: none;
+}
+.subscribe a:hover {
+  text-decoration: underline;
 }
 
 /* **************************INDEX PAGE ********************* */
@@ -92,8 +105,13 @@ h6 {
 input {
   border-radius: 3px;
 }
+
 /* Research */
 .eventSearch {
+  background: url(/./Assets/Images/group-1.jpg) 50% 50% no-repeat;
+  background-size: 100%;
+  height: 70%;
+  width: 100%;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -120,6 +138,7 @@ input {
 .simpleSteps {
   padding: 4% 0%;
 }
+
 /* .steps {
   font-size: xx-small;
 } */
@@ -168,13 +187,21 @@ input {
 .filter {
   text-align: center;
   margin-top: 2%;
-  padding: 2%;
+  padding: 1%;
 }
 .filter input {
   width: 100%;
 }
 .fill {
   text-align: left;
+}
+.fill p {
+  padding: 0;
+  margin: 0;
+}
+.imageresult .col-lg-3 {
+  background-color: var(--color-1);
+  margin: 4% 1%;
 }
 
 /* ************************* ABOUT PAGE ************************ */
@@ -197,4 +224,59 @@ input {
   margin: 4% 0 0 2%;
   background-color: #eee;
   padding: 2% 1%;
+}
+.moreDetail a {
+  text-decoration: none;
+  color: var(--color-4);
+}
+.moreDetail a:hover {
+  color: var(--color-4);
+  text-decoration: underline;
+}
+
+/* *********MEDIA QUerry********** */
+
+@media screen and (max-width: 768px) {
+  /* ************** PAGE INDEX *************** */
+  .nearYou,
+  .connectingYou,
+  .spendingLove {
+    padding: 4%;
+  }
+  .nearYou .row .col-lg-8,
+  .connectingYou .row .col-lg-8,
+  .spendingLove .row .col-lg-8 {
+    width: 100%;
+    border-radius: 20%;
+    padding: 14%;
+    font-weight: bold;
+  }
+  .nearYou .row .col-lg-8 {
+    background: url(/./Assets/Images/group-2.jpg) 50% 50% no-repeat;
+    background-size: 100%;
+  }
+  .connectingYou .row .col-lg-8 {
+    background: url(/./Assets/Images/group-4.jpg) 50% 50% no-repeat;
+    background-size: 100%;
+  }
+  .spendingLove .row .col-lg-8 {
+    background: url(/./Assets/Images/group-3.jpg) 50% 50% no-repeat;
+    background-size: 100%;
+  }
+  .nearYou button,
+  .connectingYou button,
+  .spendingLove button {
+    background: none;
+    border: none;
+    color: var(--color-1);
+    padding: 3em 0 0 0;
+    font-weight: bold;
+  }
+  .connectingYou button {
+    color: var(--color-2);
+  }
+
+  .eNyou {
+    translate: 0 8em;
+  }
 }
