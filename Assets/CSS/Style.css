@@ -7,7 +7,10 @@
   --color-6: #575a89;
   --color-7: #eee;
 }
-
+button a {
+  padding: 0;
+  line-height: 0px;
+}
 /* NAVBAR  */
 .logo {
   width: 20%;
@@ -89,6 +92,10 @@
 .subscribe a:hover {
   text-decoration: underline;
 }
+footer i {
+  color: var(--color-2);
+  padding: 2%;
+}
 
 /* **************************INDEX PAGE ********************* */
 
@@ -107,7 +114,7 @@ input {
 
 /* Research */
 .eventSearch {
-  background: url(/./Assets/Images/group-1.jpg) 50% 50% no-repeat;
+  background: url(../Images/group-1.jpg) 50% 50% no-repeat;
   background-size: 100%;
   height: 70%;
   width: 100%;
@@ -198,6 +205,9 @@ input {
   padding: 0;
   margin: 0;
 }
+.fill input {
+  border: none;
+}
 .imageresult .col-lg-3 {
   background-color: var(--color-1);
   margin: 4% 1%;
@@ -275,15 +285,15 @@ input {
     max-width: 13em;
   }
   .nearYou .row .col-lg-8 {
-    background: url(/./Assets/Images/group-2.jpg) 50% 50% no-repeat;
+    background: url(../Images/group-2.jpg) 50% 50% no-repeat;
     background-size: 100%;
   }
   .connectingYou .row .col-lg-8 {
-    background: url(/./Assets/Images/group-4.jpg) 50% 50% no-repeat;
+    background: url(../Images/group-4.jpg) 50% 50% no-repeat;
     background-size: 100%;
   }
   .spendingLove .row .col-lg-8 {
-    background: url(/./Assets/Images/group-3.jpg) 50% 50% no-repeat;
+    background: url(../Images/group-3.jpg) 50% 50% no-repeat;
     background-size: 100%;
   }
   .nearYou button,
