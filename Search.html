@@ -15,19 +15,23 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <div id="logo">
-                <a href="index.html"><img src="/Assets/Images/group-2.svg" alt="logo_homme_debout" width="70px"></a>
-                <a href="index.html"><span>[Events]</span></a>
+        <nav> 
+            <div>
+                <div class="row navbar" style="padding: 0; margin: 0;">
+                    <div class="col-lg-6 logo">
+                        <a href="index.html"><img src="/Assets/Images/group-2.svg" alt="logo_homme_debout" width="70px"></a>
+                        <a href="index.html"><span>[Events]</span></a>
+                    </div>
+        
+                    <div class="col-lg-6 navMenu" style="text-align: center;">
+                        <a href="Search.html"><i class="fa fa-search"></i><span>Search</span></a>
+                        <a href="About.html"><i class="fa fa-user"></i><span>About</span></a>
+                        <a href="#"><i class="fa fa-blog"></i><span>Blog</span></a>
+                        <a href="#"><i class="fa fa-bars"></i><span>More</span></a>
+                    </div>
+                </div>
             </div>
-
-            <div class="navMenu">
-                <a href="Search.html"><span><i class="fa fa-search"></i>Search</span></a>
-                <a href="About.html"><span><i class="fa fa-user"></i>About</span></a>
-                <a href="#"><span><i class="fa fa-blog"></i>Blog</span></a>
-                <a href="#"><span><i class="fa fa-bars" ></i>More</span></a>
-            </div>
-        </nav> 
+        </nav>
     </header>
     <main>
         <!-- Filtre recherche  -->
@@ -58,8 +62,8 @@
                             <p><b>Daytime</b></p><input type="" name="time" id="DayTime">
                         </div>
                         <div class="col-lg-2" style="text-align:start;">
-                            <button>Search</button>
-                            <button>Clear Filter</button> 
+                            <button class="btn btn-primary">Search</button>
+                            <button class="btn btn-warning" style="color: #fff;"><i class="fa fa-search"></i>Clear Filter</button> 
                         </div>
                         <div class="col-lg-1"></div>
                     </div>
@@ -68,8 +72,8 @@
             </div>
         </div>
 
-        <!-- RESULTAT EN IMAGE  -->
-        <div style="text-align: center; color: #98a5a5">
+        <!-- RESULT EN IMAGE  -->
+        <div class="d-none d-sm-block" style="text-align: center; color: #98a5a5;">
             <h6>Search Result Found 7 [Evants] Nearby.</h6>
         </div>
 
@@ -83,14 +87,14 @@
                     </div>
                     <div class="col-lg-3"><a href="about.html"><img src="./Assets/Images/group-2.svg" alt="homme_debout" width="100%"></a>
                     </div>
-                    <div class="col-lg-2            "></div>
+                    <div class="col-lg-2"></div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <!-- abonnement contact About -->
-        <section class="abbonnement">
+        <section class="abbonnement d-none d-md-block">
             <div class="container">
                 <div class="row" style="padding: 6% 18%;">
                     <div class="col-lg-5 footerMenu" style="text-align: right; margin: 3% 0;">
@@ -144,17 +148,17 @@
         <section class="copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-5">
                         <a href="facebook.com"><span><i class="fa fa-facebook"></i></span></a>
                         <a href="twitter.com"><span><i class="fa fa-twitter"></i></span></a>
                         <a href="instagram.com"><span><i class="fa fa-instagram"></i></span></a>
                         <a href="t.me"><span><i class="fa fa-telegram"></i></span></a>
                         <a href="linkedin.com"><span><i class="fa fa-linkedin"></i></span></a>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-2">
 
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-5">
                        <p> &#169; 2020 Tokinantenaina Nt, Inc. All rights reserved</p>
                     </div>
                 </div>

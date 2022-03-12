@@ -9,11 +9,11 @@
 }
 
 /* NAVBAR  */
-#logo {
+.logo {
   width: 20%;
   padding: 0;
 }
-#logo span {
+.logo span {
   color: #ffffff;
   text-shadow: 2px 2px 0px #474747;
   font-size: large;
@@ -32,7 +32,6 @@
   color: var(--color-5);
 }
 .navMenu {
-  width: 30%;
   font-size: xx-small;
 }
 
@@ -234,10 +233,24 @@ input {
   text-decoration: underline;
 }
 
+/* ------------------------------------------------- */
+
 /* *********MEDIA QUerry********** */
 
 @media screen and (max-width: 768px) {
-  /* ************** PAGE INDEX *************** */
+  /* HEADER  */
+  html {
+    /* font-size: 50%; */
+  }
+  .navbar {
+    text-align: center;
+  }
+  .navMenu span {
+    display: none;
+  }
+
+  /* ************************************* PAGE INDEX ************************************** */
+  /* MAIN  */
   .nearYou,
   .connectingYou,
   .spendingLove {
@@ -250,6 +263,13 @@ input {
     border-radius: 20%;
     padding: 14%;
     font-weight: bold;
+  }
+  .eventSearch {
+    background-size: 200%;
+  }
+  .search {
+    width: 13em;
+    max-width: 13em;
   }
   .nearYou .row .col-lg-8 {
     background: url(/./Assets/Images/group-2.jpg) 50% 50% no-repeat;
@@ -278,5 +298,9 @@ input {
 
   .eNyou {
     translate: 0 8em;
+  }
+  /* ************************************* PAGE SEARCH **************************************  */
+  .imageresult .row {
+    padding: 10%;
   }
 }
