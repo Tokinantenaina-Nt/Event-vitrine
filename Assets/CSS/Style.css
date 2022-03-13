@@ -153,8 +153,14 @@ input {
 .nearYou img,
 .connectingYou img,
 .spendingLove img {
-  width: 100%;
+  width: 50%;
+  height: 100%;
   border-radius: 50%;
+}
+.nearYou .col-lg-4,
+.connectingYou .col-lg-4,
+.spendingLove .col-lg-4 {
+  text-align: center;
 }
 
 .nearYou button,
@@ -262,7 +268,7 @@ input {
     display: none;
   }
 
-  /* ************************************* PAGE INDEX ************************************** */
+  /* ************************************* INDEX PAGE  ************************************** */
   /* MAIN  */
   .nearYou,
   .connectingYou,
@@ -281,8 +287,8 @@ input {
     background-size: 200%;
   }
   .search {
-    width: 13em;
-    max-width: 13em;
+    width: 11em;
+    max-width: 11em;
   }
   .nearYou .row .col-lg-8 {
     background: url(../Images/group-2.jpg) 50% 50% no-repeat;
@@ -310,9 +316,9 @@ input {
   }
 
   .eNyou {
-    translate: 0 8em;
+    translate: 0 9em;
   }
-  /* ************************************* PAGE SEARCH **************************************  */
+  /* ************************************* SEARCH  PAGE  **************************************  */
   .imageresult .row {
     padding: 10%;
   }
