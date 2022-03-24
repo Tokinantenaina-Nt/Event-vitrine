@@ -277,8 +277,8 @@ input {
   .connectingYou .row .col-lg-8,
   .spendingLove .row .col-lg-8 {
     width: 100%;
-    border-radius: 20%;
-    padding: 14%;
+    border-radius: 50px;
+    padding: 4%;
     font-weight: bold;
   }
   .eventSearch {
