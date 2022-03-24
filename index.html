@@ -38,13 +38,16 @@
         <!-- RESEARCH EVENT -->
         <div class="eventSearch">
             <span>[Events]... your gateway to connect with events around your area</span>
+
           <form action="get">
              <p style="color: #1f1f1f; font-size:large; padding: 1em 0 0 0"> SEARCH EVENTS NEARBY</p><br>
-             <input type="text" placeholder=" Insert your location here " style="min-width: 11em;"></input>
-             <button class="btn btn-primary search" style="background-color: rgba(211,86,73,90%); border: 0; margin-left: -1%; margin-top: -0.3rem; height: 1.8em; padding-top: 0.3em;"> <p><b>SEARCH</b></p></button></span>
-            
+              <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Insert your location here" aria-label="Recipient's username" aria-describedby="button-addon2" style="min-width: 15vh;"></input>
+                    <button class="btn btn-outline-secondary search" type="button" style="background-color: rgba(211,86,73,90%); border: 0; color: #fff;" id="button-addon2"><b>SEARCH</b></button></span>
+              </div> 
           </form>
-          <button class="btn btn-primary" style="background-color:rgba(255,255,255, 80%); border: 0; height: 1.9em; color: black;" > <p><b> How It Works</b></p></button>
+
+          <button class="btn btn-primary" style="background-color:rgba(255,255,255, 80%); border: 0; color: black;" ><b> How It Works</b></button>
         </div>
         
         <!-- 4 SIMPLE STEPS -->
@@ -102,9 +105,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <p class="eNyou"><b> [Events] near you </b></p>
+                        <p class="d-none d-md-block"><b> [Events] near you </b></p>
                         <p>Every month a new you might find [Events] near you and enjoy the
                             company with people whom you can share mutual interests</p>
+                        <p class="eNyou"><b> [Events] near you </b></p>
                             <a href="search.html"><button>Find a [Events]</button></a>
                     </div>
                     <div class="col-lg-4 d-none d-md-block">
@@ -119,10 +123,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <p class="eNyou"><b>[Events] connecting you</b></p>
+                        <p class="d-none d-md-block"><b>[Events] connecting you</b></p>
                         <p>You can create [Events] events around your area and share them
                             with people you know and with whoever wants to connect
                             </p>
+                            <p class="eNyou"><b>[Events] connecting you</b></p>
                             <a href="search.html"><button>Learn more about [Events]</button></a>
                     </div>
                     <div class="col-lg-4 d-none d-md-block">
@@ -141,6 +146,7 @@
                         <p>[Events] let you meet new people, share interests and spreading
                             love
                             </p>
+                            <p class="d-none d-md-block"><b>[Events] spending love </b></p>
                              <button class="" style="opacity: 0;padding: 5%;"><!--None --></button> 
                     </div>
                     <div class="col-lg-4 d-none d-md-block">
@@ -157,17 +163,18 @@
         <section class="abbonnement d-none d-md-block">
             <div class="container">
                 <div class="row" style="padding: 6% 18%;">
-                    <div class="col-lg-5 footerMenu" style="text-align: right; margin: 3% 0;">
+                    <div class="col-lg-5 footerMenu" style="text-align: right; margin: 4% 0;">
                         <span> <a href="index.html"> HOME</a></span>
                         <span> <a href="search.html"> SEARCH</a></span>
                         <span> <a href="about.html"> ABOUT US</a></span>
                         <span> <a href="index.html"> ADVERTISE</a></span>
                     </div>
                     <div class="col-lg-2 mapsnavbar">
+                        <!-- <i class="fas fa-map-marker fa-2x"></i> -->
                         <img src="Assets/Icones/mapsnavbar_icon.svg" alt="map" width="100px"; style="  margin: 0px 0 0 -4%;";>
                     </div>
                    
-                        <div class="col-lg-5 footerMenu" style="text-align: left;  margin: 3% 0;">
+                        <div class="col-lg-5 footerMenu" style="text-align: left;  margin: 4% 0;">
                             <span> <a href="index.html"> FACEBOOK</a></span>
                             <span> <a href="index.html"> TWITTER</a></span>
                             <span> <a href="index.html"> INSTAGRAM</a></span>
@@ -181,9 +188,11 @@
                     <div class="col subscribe">
                         <p><b> Subscribe</b></p>
                         <form action="">
-                            <input type="text" placeholder="Insert your email here">
-                            <button class="btn btn-outline-secondary" style="margin: -0.5em 0em 0em -1em; height: 0.5em;   padding: 1em 2em 2em 2em;
-                            background-color: #444;"  ><p style="color: #fff; padding: 0 0 0 0;"> <b> Send</b></p></button>
+                            <div class="input-group mb-3">
+                                <input  class="form-control" type="text" placeholder="Insert your email here">
+                                <button class="btn btn-outline-secondary" style="
+                                background-color: #444;"><b style="color: #fff;"> Send</b></button>
+                            </div>
                         </form>
                     </div>
                     <!-- CONTACT  -->

@@ -11,10 +11,7 @@
   padding: 0;
   margin: 0;
 }
-button a {
-  padding: 0;
-  line-height: 0px;
-}
+
 /* NAVBAR  */
 .logo {
   width: 20%;
@@ -55,12 +52,14 @@ button a {
 .footerMenu {
   border-top: solid #eee 1px;
   border-bottom: solid #eee 1px;
-  padding: 2% 0;
+  padding: 2% 100%;
   display: flex;
   justify-items: center;
   justify-content: space-between;
 }
-
+.footerMenu span {
+  white-space: nowrap;
+}
 .footerMenu a {
   text-decoration: none;
   color: #fff;
@@ -86,7 +85,6 @@ button a {
   color: #fff;
   background-color: #1f1f1f;
   border: solid #99a5a5 0.1px;
-  height: 2.2rem;
 }
 .subscribe input::placeholder {
   color: #939f9f;
@@ -142,7 +140,7 @@ input {
 }
 
 .eventSearch input {
-  width: 80%;
+  width: 100%;
 }
 
 /* 4 steps */
@@ -155,6 +153,10 @@ input {
 } */
 
 /* NEAR YOU */
+.eNyou {
+  display: none;
+}
+
 .nearYou img,
 .connectingYou img,
 .spendingLove img {
@@ -209,16 +211,7 @@ input {
 .filter input {
   width: 100%;
 }
-.fill {
-  text-align: left;
-}
-.fill p {
-  padding: 0;
-  margin: 0;
-}
-.fill input {
-  border: none;
-}
+
 .imageresult .col-lg-3 {
   background-color: var(--color-1);
   margin: 4% 1%;
@@ -261,7 +254,7 @@ input {
 
 /* *********MEDIA QUerry********** */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* HEADER  */
   .navbar {
     text-align: center;
@@ -277,6 +270,9 @@ input {
   .spendingLove {
     padding: 4%;
   }
+  .eventSearch .search {
+    width: 100%;
+  }
   .nearYou .row .col-lg-8,
   .connectingYou .row .col-lg-8,
   .spendingLove .row .col-lg-8 {
@@ -288,10 +284,7 @@ input {
   .eventSearch {
     background-size: 200%;
   }
-  .search {
-    width: 11em;
-    max-width: 11em;
-  }
+
   .nearYou .row .col-lg-8 {
     background: url(../Images/group-2.jpg) 50% 50% no-repeat;
     background-size: 100%;
@@ -310,7 +303,7 @@ input {
     background: none;
     border: none;
     color: var(--color-1);
-    padding: 3em 0 0 0;
+    /* padding: 3em 0 0 0; */
     font-weight: bold;
   }
   .connectingYou button {
@@ -318,7 +311,7 @@ input {
   }
 
   .eNyou {
-    translate: 0 9em;
+    display: block;
   }
   /* ************************************* SEARCH  PAGE  **************************************  */
   .imageresult .row {
